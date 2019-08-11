@@ -32,9 +32,14 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let baseNumber = 2 // INSERT ANY NUMBER
+
+for (let i = 0; i < 13; i++) {
+  console.log(baseNumber * i)
+}
+
 // Add your code above this line
 
-console.log('')
 console.log('-----------------')
 
 /***********
@@ -66,9 +71,12 @@ console.log('Problem 2:')
 
 // Add your code below this line
 
+let numbers = [57, 13, 4, 38] // INSERT ANY NUMBERS
+let currentLargestNumber = Math.max(...numbers)
+
 // Add your code above this line
 
-console.log('')
+console.log(currentLargestNumber)
 console.log('-----------------')
 
 /***********
@@ -113,7 +121,21 @@ console.log('Problem 3:')
 
 // Add your code below this line
 
+let playerAChoice = 'rock' // INSERT CHOICE
+let playerBChoice = 'paper' // INSERT CHOICE
+
+if (playerAChoice === playerBChoice) {
+  console.log('tie')
+} else if (playerAChoice === 'rock') {
+  playerBChoice === 'paper' ? console.log('playerB wins') : console.log('playerA wins')
+} else if (playerAChoice === 'paper') {
+  playerBChoice === 'rock' ? console.log('playerA wins') : console.log('playerB wins')
+} else if (playerAChoice === 'scissors') {
+  playerBChoice === 'rock' ? console.log('playerB wins') : console.log('playerA wins')
+} else {
+  console.log('error')
+}
+
 // Add your code above this line
 
-console.log('')
 console.log('-----------------')
