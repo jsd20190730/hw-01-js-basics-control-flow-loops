@@ -32,6 +32,12 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let baseNumber = 3
+
+for (let x = 0; x < 13; x++){
+  console.log(baseNumber * x)
+}
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +71,19 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+let values = [3, 48, 29, 12, 18]
+console.log(`Values are ${values}`)
+let result = values[0]
+
+values.forEach(function(element, index){
+  if (element > result){
+    result = element
+  }
+})
+
+console.log(`Largest number is ${result}`)
+
+
 
 // Add your code above this line
 
@@ -112,6 +131,22 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+let playerAChoice = "scissors"
+let playerBChoice = "paper"
+
+if(playerAChoice === playerBChoice){
+  console.log(`Result: "tie"`)
+}
+else if((playerAChoice == "paper" && playerBChoice == "rock") ||
+(playerAChoice == "scissors" && playerBChoice == "paper")){
+  console.log(`Result: "Player A wins!"`)
+}
+else{
+  console.log(`Result: "Player B wins!"`)
+}
+
+
+
 
 // Add your code above this line
 
