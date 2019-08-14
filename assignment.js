@@ -80,6 +80,29 @@ console.log('Problem 2:')
 
 // Add your code below this line
 
+let numbers = [57, 13, 4, 38]
+let currentLargestNumber = 0
+
+/* numbers.forEach(function(number){
+  // console.log(numbers) ** checking to see if it is within scope
+  let largestNumber = Math.max(57, 13, 4, 38)
+  console.log(`${largestNumber} is the highest number in this array.`)
+}) */
+
+//if (true) {
+  // console.log(numbers)
+  //let currentLargestNumber = numbers[3]
+  //console.log(currentLargestNumber)
+//}
+
+for (let number of numbers) {
+  console.log(number)
+  let largestNumber = Math.max(numbers[i])
+  console.log(largestNumber)
+}
+
+// help 
+
 // Add your code above this line
 
 console.log('')
@@ -126,6 +149,27 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+let playerAChoice = "rock"
+let playerBChoice = "paper"
+
+if (playerAChoice === playerBChoice) {
+  console.log("It's a tie! Try again.")
+} else if (playerAChoice === "rock", playerBChoice === "paper") {
+  console.log("Player A wins!")
+} else if (playerAChoice === "rock", playerBChoice === "scissors") {
+  console.log("Player B wins!")
+} else if (playerAChoice === "scissors", playerBChoice === "paper") {
+  console.log("Player A wins!")
+} else if (playerAChoice === "scissors", playerBChoice === "rock") {
+  console.log("Player B wins!")
+} else if (playerAChoice === "paper", playerBChoice === "rock") {
+  console.log("Player A wins!")
+} else if (playerAChoice === "paper", playerBChoice === "scissors") {
+  console.log("Player B wins!")
+} else {
+  console.log("Come on, be serious. It's either rock, paper, or scissors.")
+}
 
 // Add your code above this line
 
