@@ -31,6 +31,14 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 1:')
 
 // Add your code below this line
+let n = 0
+let baseNumber = 2
+let targetSteps = 12
+
+do {
+  console.log(baseNumber*n)
+  n++
+} while (n <= targetSteps)
 
 // Add your code above this line
 
@@ -65,6 +73,9 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+let values = [3, 48, 29, 12, 18]
+console.log(Math.max(...values))
 
 // Add your code above this line
 
@@ -112,6 +123,32 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+let playerAChoice = "rock"
+let playerBChoice = "paper"
+
+console.log(`PlayerA: ${playerAChoice}`)
+console.log(`PlayerB: ${playerBChoice}`)
+
+if (playerAChoice === playerBChoice ) {
+
+  console.log("tie")
+
+} else if (playerAChoice === "rock" && playerBChoice ==="paper") {
+
+  console.log("playerA wins")
+
+} else if (playerAChoice === "scissors" && playerBChoice ==="paper") {
+
+  console.log("playerA wins")
+
+} else if (playerAChoice === "paper" && playerBChoice ==="rock") {
+
+  console.log("playerA wins")
+} else {
+
+  console.log("playerB wins")
+}
 
 // Add your code above this line
 
