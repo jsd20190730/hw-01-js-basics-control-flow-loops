@@ -32,6 +32,20 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let baseNumber = 2
+let i = 0
+
+do {
+  console.log(baseNumber * i)
+  baseNumber && i++
+} while (i < 12)
+
+/* let baseNumber = 2
+
+for (i = 0; i <= 12; i++) {
+  console.log (baseNumber * i)
+} */
+
 // Add your code above this line
 
 console.log('')
