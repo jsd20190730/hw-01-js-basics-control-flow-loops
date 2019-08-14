@@ -77,10 +77,6 @@ let values = [57,13,4,38]
 
 console.log(Math.max.apply(null, values))
 
-let valuesTwo = [3,48,29,12,18]
-
-console.log(Math.max.apply(null, valuesTwo))
-
 // Add your code above this line
 
 console.log('')
@@ -129,14 +125,14 @@ console.log('Problem 3:')
 // Add your code below this line
 
 //GAME 1
-let playerAChoiceOne = 'rock'
-let playerBChoiceOne = 'paper'
+let playerAChoice = 'rock'
+let playerBChoice = 'paper'
 
-  if (playerAChoiceOne === playerBChoiceOne) {
+  if (playerAChoice === playerBChoice) {
     console.log('It is a tie yo!')
   }
-  if (playerAChoiceOne === 'rock') {
-    if (playerBChoiceOne === 'paper') {
+  if (playerAChoice === 'rock') {
+    if (playerBChoice === 'paper') {
       // Paper beats Rock
       console.log('Player B wins!')
     }
@@ -146,8 +142,8 @@ let playerBChoiceOne = 'paper'
     }
   }
 
-  if (playerAChoiceOne === 'paper') {
-    if (playerBChoiceOne === 'scissors') {
+  if (playerAChoice === 'paper') {
+    if (playerBChoice === 'scissors') {
       // Scissors beats paper
       console.log('Player B wins!')
     }
@@ -157,8 +153,8 @@ let playerBChoiceOne = 'paper'
     }
   }
 
-  if (playerAChoiceOne === 'scissors') {
-    if (playerBChoiceOne === 'rock') {
+  if (playerAChoice === 'scissors') {
+    if (playerBChoice === 'rock') {
       // Rock beats scissors
       console.log('Player B wins!')
     }
@@ -168,89 +164,6 @@ let playerBChoiceOne = 'paper'
     }
 }
 
-// GAME 2
-
-let playerAChoiceTwo = 'scissors'
-let playerBChoiceTwo = 'scissors'
-
-  if (playerAChoiceTwo === 'rock') {
-    if (playerBChoiceTwo === 'paper') {
-      // Paper beats Rock
-      console.log('Player B wins!')
-    }
-    if (playerAChoiceTwo === playerBChoiceTwo) {
-      console.log('It is a tie yo!')
-    }
-    else {
-      // Rock beats scissors
-      console.log('Player A wins!')
-    }
-  }
-  if (playerAChoiceTwo === 'paper') {
-    if (playerBChoiceTwo === 'scissors') {
-      // Scissors beats paper
-      console.log('Player B wins!')
-    }
-    if (playerAChoiceTwo === playerBChoiceTwo) {
-      console.log('It is a tie yo!')
-    }
-    else {
-      // Paper beats rock
-      console.log('Player A wins!')
-    }
-  }
-  if (playerAChoiceTwo === 'scissors') {
-    if (playerBChoiceTwo === 'rock') {
-      // Rock beats scissors
-      console.log('Player B wins!')
-    }
-    if (playerAChoiceTwo === playerBChoiceTwo) {
-      console.log('It is a tie yo!')
-    }
-    else {
-      // Scissors beats paper
-      console.log('Player A wins!')
-    }
-}
-
-// Game 3
-
-let playerAChoiceThree ="scissors"
-let playerBChoiceThree ="paper"
-
-  if (playerAChoiceThree === playerBChoiceThree) {
-    console.log('It is a tie yo!')
-  }
-  if (playerAChoiceThree === 'rock') {
-    if (playerBChoiceThree === 'paper') {
-      // Paper beats Rock
-      console.log('Player B wins!')
-    }
-    else {
-      // Rock beats scissors
-      console.log('Player A wins!')
-    }
-  }
-  if (playerAChoiceThree === 'paper') {
-    if (playerBChoiceThree === 'scissors') {
-      // Scissors beats paper
-      console.log('Player B wins!')
-    }
-    else {
-      // Paper beats rock
-      console.log('Player A wins!')
-    }
-  }
-  if (playerAChoiceThree === 'scissors') {
-    if (playerBChoiceThree === 'rock') {
-      // Rock beats scissors
-      console.log('Player B wins!')
-    }
-    else {
-      // Scissors beats paper
-      console.log('Player A wins!')
-    }
-}
 
 
 // Add your code above this line
