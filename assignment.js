@@ -32,6 +32,11 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let baseNumber = 9
+let outCome = ""
+for (let i = 1; i <= 12; i++) {
+  outCome += i*baseNumber + ","}
+console.log(outCome)
 // Add your code above this line
 
 console.log('')
@@ -65,6 +70,11 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+let numbersArray = [3, 48, 29, 12, 18]
+
+let currentLargestNumber = Math.max.apply(Math, numbersArray)
+
+  console.log(currentLargestNumber)
 
 // Add your code above this line
 
@@ -112,6 +122,26 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+let playerAChoice = ""
+
+let playerBChoice = ""
+
+if (playerAChoice === "rock" && playerBChoice ==="paper"){
+  console.log("playerB wins")
+}
+else if (playerAChoice === playerBChoice) {
+  console.log("tie")
+}
+else if (playerAChoice === "scissors" && playerBChoice === "paper"){
+  console.log("playerA wins")
+}
+else if (playerBChoice === "rock" && playerAChoice === "paper"){
+  console.log("playerA wins")
+}
+else if (playerBChoice === "scissors" && playerAChoice === "paper") {
+  console.log("playerB wins")
+}
+
 
 // Add your code above this line
 
