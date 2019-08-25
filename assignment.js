@@ -34,7 +34,7 @@ console.log('Problem 1:')
 
 let baseNumber = 9
 let outCome = ""
-for (i=1; i<=11; i++) {
+for (i = 1; i <= 12; i++) {
 outCome += i*baseNumber + ","}
 console.log(outCome)
 // Add your code above this line
@@ -126,19 +126,19 @@ let playerAChoice = ""
 
 let playerBChoice = ""
 
-if (playerAChoice === "rock", playerBChoice ==="paper"){
+if (playerAChoice === "rock" && playerBChoice ==="paper"){
   console.log("playerB wins")
 }
 else if (playerAChoice === playerBChoice) {
   console.log("tie")
 }
-else if (playerAChoice === "scissors", playerBChoice === "paper"){
+else if (playerAChoice === "scissors" && playerBChoice === "paper"){
   console.log("playerA wins")
 }
-else if (playerBChoice === "rock", playerAChoice === "paper"){
+else if (playerBChoice === "rock" && playerAChoice === "paper"){
   console.log("playerA wins")
 }
-else if (playerBChoice === "scissors", playerAChoice === "paper") {
+else if (playerBChoice === "scissors" && playerAChoice === "paper") {
   console.log("playerB wins")
 }
 
