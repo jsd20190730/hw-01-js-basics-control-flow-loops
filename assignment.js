@@ -34,8 +34,8 @@ console.log('Problem 1:')
 
 let baseNumber = 9
 let outCome = ""
-for (i = 1; i <= 12; i++) {
-outCome += i*baseNumber + ","}
+for (let i = 1; i <= 12; i++) {
+  outCome += i*baseNumber + ","}
 console.log(outCome)
 // Add your code above this line
 
