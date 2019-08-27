@@ -29,12 +29,14 @@ Use the following test cases to confirm your program meets the success criteria
     24
 ************/
 console.log('Problem 1:')
-
+let baseNumber = 3
 // Add your code below this line
 
+for (let i = 0; i < 13; i++)
+  console.log(i * baseNumber)
 // Add your code above this line
 
-console.log('')
+// console.log('')
 console.log('-----------------')
 
 /***********
@@ -65,7 +67,8 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
-
+let numbers = [57, 13, 4, 28]
+console.log(Math.max(...numbers))
 // Add your code above this line
 
 console.log('')
@@ -112,8 +115,25 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+let playerAChoice = 'rock'
+let playerBChoice = 'paper'
 
+if (playerAChoice === playerBChoice) {
+  console.log('tie')
+} else if (playerAChoice === 'scissors' && playerBChoice === 'rock') {
+  console.log('playerB wins')
+} else if (playerAChoice === 'paper' && playerBChoice === 'rock') {
+  console.log('playerA wins')
+} else if (playerAChoice === 'rock' && playerBChoice === 'paper') {
+  console.log('playerB wins')
+} else if (playerAChoice === 'scissors' && playerBChoice === 'paper') {
+  console.log('playerA wins')
+} else if (playerAChoice === 'rock' && playerBChoice === 'scissors') {
+  console.log('playerA wins')
+} else if (playerAChoice === 'paper' && playerBChoice === 'scissors') {
+  console.log('playerB wins')
+}
 // Add your code above this line
 
-console.log('')
+
 console.log('-----------------')
