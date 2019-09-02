@@ -32,6 +32,20 @@ console.log('Problem 1:')
 
 // Add your code below this line
 
+let baseNumber = 2
+let i = 0
+
+do {
+  console.log(baseNumber * i)
+  baseNumber && i++
+} while (i < 12)
+
+/* let baseNumber = 2
+
+for (i = 0; i <= 12; i++) {
+  console.log (baseNumber * i)
+} */
+
 // Add your code above this line
 
 console.log('')
@@ -65,6 +79,14 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 2:')
 
 // Add your code below this line
+
+const numbers = [57, 13, 4, 38]
+
+let reversedNumbers = numbers.sort().reverse()
+let largestNumber = reversedNumbers[0]
+
+console.log(largestNumber)
+// 57 should pop up
 
 // Add your code above this line
 
@@ -112,6 +134,27 @@ Use the following test cases to confirm your program meets the success criteria
 console.log('Problem 3:')
 
 // Add your code below this line
+
+let playerAChoice = "rock"
+let playerBChoice = "rock"
+
+if (playerAChoice === playerBChoice) {
+  console.log("It's a tie! Try again.")
+} else if (playerAChoice === "rock" && playerBChoice === "paper") {
+  console.log("Player A wins!")
+} else if (playerAChoice === "rock" && playerBChoice === "scissors") {
+  console.log("Player B wins!")
+} else if (playerAChoice === "scissors" && playerBChoice === "paper") {
+  console.log("Player A wins!")
+} else if (playerAChoice === "scissors" && playerBChoice === "rock") {
+  console.log("Player B wins!")
+} else if (playerAChoice === "paper" && playerBChoice === "rock") {
+  console.log("Player A wins!")
+} else if (playerAChoice === "paper" && playerBChoice === "scissors") {
+  console.log("Player B wins!")
+} else {
+  console.log("Come on, be serious. It's either rock, paper, or scissors.")
+}
 
 // Add your code above this line
 
